@@ -2,19 +2,19 @@ package game.model;
 
 public class Habilidad_T{
 
-   private int nombre;
-   private String descripcion;
+    private String nombre;
+    private String descripcion;
 
-    public Habilidad_T(int nombre, String descripcion) {
+    public Habilidad_T(String nombre, String descripcion) {
         this.nombre = nombre;
         this.descripcion = descripcion;
     }
 
-    public int getNombre() {
+    public String getNombre() {
         return nombre;
     }
 
-    public void setNombre(int nombre) {
+    public void setNombre(String nombre) {
         this.nombre = nombre;
     }
 

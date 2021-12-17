@@ -1,14 +1,18 @@
+package game.model;
+
 public class Espectro {
 
     private int ID_Es;
     private int vida;
     private int daño;
+    private int oro;
     private String nombre;
 
-    public Espectro(int ID_Es, int vida, int daño, String nombre) {
+    public Espectro(int ID_Es, int vida, int daño, int oro, String nombre) {
         this.ID_Es = ID_Es;
         this.vida = vida;
         this.daño = daño;
+        this.oro = oro;
         this.nombre = nombre;
     }
 
@@ -34,6 +38,14 @@ public class Espectro {
 
     public void setDaño(int daño) {
         this.daño = daño;
+    }
+
+    public int getOro() {
+        return oro;
+    }
+
+    public void setOro(int oro) {
+        this.oro = oro;
     }
 
     public String getNombre() {

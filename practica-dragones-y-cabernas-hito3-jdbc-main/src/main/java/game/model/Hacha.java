@@ -1,17 +1,15 @@
 package game.model;
 
 public class Hacha{
-    
+
     private int peso;
     private String nombre;
     private int daño;
-    private boolean equipado_H;
 
-    public Hacha(int peso, String nombre, int daño, boolean equipado_H) {
+    public Hacha(int peso, String nombre, int daño) {
         this.peso = peso;
         this.nombre = nombre;
         this.daño = daño;
-        this.equipado_H = equipado_H;
     }
 
     public int getPeso() {
@@ -36,13 +34,5 @@ public class Hacha{
 
     public void setDaño(int daño) {
         this.daño = daño;
-    }
-
-    public boolean isEquipado_H() {
-        return equipado_H;
-    }
-
-    public void setEquipado_H(boolean equipado_H) {
-        this.equipado_H = equipado_H;
     }
 }
