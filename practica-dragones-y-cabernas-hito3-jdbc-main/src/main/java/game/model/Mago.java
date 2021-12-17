@@ -1,7 +1,7 @@
 package game.model;
 
 public class Mago {
-    private String apariencia;
+    private int apariencia;
     private String nombre;
     private int ID_M;
     private int vida;
@@ -10,7 +10,7 @@ public class Mago {
     private int oro;
     private int nivel;
 
-    public Mago(String apariencia, String nombre, int ID_M, int vida, int fuerza, int mana, int oro, int nivel) {
+    public Mago(int apariencia, String nombre, int ID_M, int vida, int fuerza, int mana, int oro, int nivel) {
         this.apariencia = apariencia;
         this.nombre = nombre;
         this.ID_M = ID_M;
@@ -21,7 +21,7 @@ public class Mago {
         this.nivel = nivel;
     }
 
-    public String getApariencia() {
+    public int getApariencia() {
         return apariencia;
     }
 
