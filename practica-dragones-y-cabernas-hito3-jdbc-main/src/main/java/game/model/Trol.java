@@ -1,3 +1,5 @@
+package game.model;
+
 public class Trol {
 
     private int daño;
