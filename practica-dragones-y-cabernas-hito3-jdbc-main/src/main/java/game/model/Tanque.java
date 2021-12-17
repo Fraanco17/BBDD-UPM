@@ -1,7 +1,7 @@
 package game.model;
 
 public class Tanque {
-    private String apariencia;
+    private int apariencia;
     private String nombre;
     private int ID_T;
     private int vida;
@@ -10,7 +10,7 @@ public class Tanque {
     private int oro;
     private int nivel;
 
-    public Tanque(String apariencia, String nombre, int ID_T, int vida, int fuerza, int mana, int oro, int nivel) {
+    public Tanque(int apariencia, String nombre, int ID_T, int vida, int fuerza, int mana, int oro, int nivel) {
         this.apariencia = apariencia;
         this.nombre = nombre;
         this.ID_T = ID_T;
@@ -21,7 +21,7 @@ public class Tanque {
         this.nivel = nivel;
     }
 
-    public String getApariencia() {
+    public int getApariencia() {
         return apariencia;
     }
 
