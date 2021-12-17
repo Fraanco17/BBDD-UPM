@@ -1,7 +1,7 @@
 package game.model;
 
 public class Guerrero {
-    private String apariencia;
+    private int apariencia;
     private String nombre;
     private int ID_G;
     private int vida;
@@ -10,7 +10,7 @@ public class Guerrero {
     private int oro;
     private int nivel;
 
-    public Guerrero(String apariencia, String nombre, int ID_G, int vida, int fuerza, int mana, int oro, int nivel) {
+    public Guerrero(int apariencia, String nombre, int ID_G, int vida, int fuerza, int mana, int oro, int nivel) {
         this.apariencia = apariencia;
         this.nombre = nombre;
         this.ID_G = ID_G;
@@ -21,7 +21,7 @@ public class Guerrero {
         this.nivel = nivel;
     }
 
-    public String getApariencia() {
+    public int getApariencia() {
         return apariencia;
     }
 
