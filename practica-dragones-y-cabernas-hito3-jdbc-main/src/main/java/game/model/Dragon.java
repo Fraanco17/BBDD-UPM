@@ -20,6 +20,10 @@ public class Dragon {
         this.nivel = nivel;
     }
 
+    public Dragon(String nombre) {
+        this.nombre = nombre;
+    }
+
     public String getNombre() {
         return nombre;
     }
