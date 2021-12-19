@@ -1,8 +1,10 @@
 package game.model;
 
 /**
- * Modela un dragón. No es necesario modificar esta clase. Pero debe crear tantas clases como entidades
- * necesite para llevar a cabo esta parte del hito 3. Inclúyalas en el paquete "game.model"
+ * Modela un dragón. No es necesario modificar esta clase. Pero debe crear
+ * tantas clases como entidades
+ * necesite para llevar a cabo esta parte del hito 3. Inclúyalas en el paquete
+ * "game.model"
  */
 public class Dragon {
 
@@ -21,7 +23,10 @@ public class Dragon {
     }
 
     public Dragon(String nombre) {
-        this(nombre,1,1000,300,1);
+        this(nombre, 1, 1000, 300, 1);
+    }
+
+    public Dragon(Object object) {
     }
 
     public String getNombre() {

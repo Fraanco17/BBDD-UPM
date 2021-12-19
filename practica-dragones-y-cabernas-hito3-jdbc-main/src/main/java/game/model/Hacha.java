@@ -1,22 +1,22 @@
 package game.model;
 
-public class Hacha{
+public class Hacha {
 
-    private int peso;
+    private float peso;
     private String nombre;
     private int daño;
 
-    public Hacha(int peso, String nombre, int daño) {
+    public Hacha(float peso, String nombre, int daño) {
         this.peso = peso;
         this.nombre = nombre;
         this.daño = daño;
     }
 
-    public int getPeso() {
+    public float getPeso() {
         return peso;
     }
 
-    public void setPeso(int peso) {
+    public void setPeso(float peso) {
         this.peso = peso;
     }
 

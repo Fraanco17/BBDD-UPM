@@ -12,6 +12,9 @@ public class Espada {
         this.daño = daño;
     }
 
+    public Espada() {
+    }
+
     public float getPeso() {
         return peso;
     }
