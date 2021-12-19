@@ -27,21 +27,21 @@ public class Main {
         conn = DriverManager.getConnection(url, DB_USER, DB_PASS);
 
         // @TODO pruebe sus funciones
-        consulta();
+        nuevo_dragon("EL PEPE");
         conn.close();
     }
 
     // @TODO resuelva las siguientes funciones...
 
-    public static void consulta() throws SQLException {
-        Statement st = conn.createStatement();
-        ResultSet rs = st.executeQuery("select * from mago");
-        while (rs.next()) {
-            System.out.println(rs.getString("*") + "\n");
-        }
-    }
-
-    public static void nuevo_dragon(String nombre) {
+    public static void nuevo_dragon(String nombre) throws SQLException {
+        PreparedStatement stmt = conn
+                .prepareStatement("INSERT INTO Dragon (ID_Dragon, daño, vida, nivel, nombre) VALUES (?, ? ,? ,? ,?)");
+        stmt.setInt(1, 7);
+        stmt.setInt(2, 1700);
+        stmt.setInt(3, 17000);
+        stmt.setInt(4, 7);
+        stmt.setString(5, nombre);
+        stmt.executeUpdate();
     }
 
     public static List<Dragon> squad_derrota_dragones(Long id_squad) {
