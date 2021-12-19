@@ -37,8 +37,7 @@ public class Main {
     // @TODO resuelva las siguientes funciones...
 
     public static void nuevo_dragon(String nombre) throws SQLException {
-        PreparedStatement stmt = conn
-                .prepareStatement("INSERT INTO Dragon (ID_Dragon, daño, vida, nivel, nombre) VALUES (?, ? ,? ,? ,?)");
+        PreparedStatement stmt = conn.prepareStatement("INSERT INTO Dragon (ID_Dragon, daño, vida, nivel, nombre) VALUES (?, ? ,? ,? ,?)");
         stmt.setInt(1, 7);
         stmt.setInt(2, 1700);
         stmt.setInt(3, 17000);
