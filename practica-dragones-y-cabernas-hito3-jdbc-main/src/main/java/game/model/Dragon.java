@@ -21,7 +21,7 @@ public class Dragon {
     }
 
     public Dragon(String nombre) {
-        this.nombre = nombre;
+        this(nombre,1,1000,300,1);
     }
 
     public String getNombre() {
@@ -51,4 +51,5 @@ public class Dragon {
     public void setNivel(int nivel) {
         this.nivel = nivel;
     }
+
 }
