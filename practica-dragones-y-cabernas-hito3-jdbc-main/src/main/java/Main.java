@@ -27,14 +27,21 @@ public class Main {
         conn = DriverManager.getConnection(url, DB_USER, DB_PASS);
 
         // @TODO pruebe sus funciones
-
+        consulta();
         conn.close();
     }
 
     // @TODO resuelva las siguientes funciones...
 
-    public static void nuevo_dragon(String nombre) {
+    public static void consulta() throws SQLException {
+        Statement st = conn.createStatement();
+        ResultSet rs = st.executeQuery("select * from mago");
+        while (rs.next()) {
+            System.out.println(rs.getString("*") + "\n");
+        }
+    }
 
+    public static void nuevo_dragon(String nombre) {
     }
 
     public static List<Dragon> squad_derrota_dragones(Long id_squad) {
