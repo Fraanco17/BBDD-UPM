@@ -57,4 +57,12 @@ public class Dragon {
         this.nivel = nivel;
     }
 
+    public String getAllDataAsString(){
+        String returnString = "";
+        returnString += "nombre:\t"+nombre + "\r\n";
+        returnString += "vida:\t"+vida+ "\r\n";
+        returnString += "daño:\t"+daño+ "\r\n";
+        returnString += "nivel:\t"+nivel+ "\r\n";
+        return returnString;
+    }
 }

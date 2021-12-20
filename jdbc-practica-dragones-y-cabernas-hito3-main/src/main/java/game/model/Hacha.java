@@ -35,4 +35,12 @@ public class Hacha {
     public void setDaño(int daño) {
         this.daño = daño;
     }
+
+    public String getAllDataAsString(){
+        String returnString = "";
+        returnString += "nombre:\t"+nombre+ "\r\n";
+        returnString += "daño:\t"+daño+ "\r\n";
+        returnString += "peso:\t"+peso+ "\r\n";
+        return returnString;
+    }
 }
