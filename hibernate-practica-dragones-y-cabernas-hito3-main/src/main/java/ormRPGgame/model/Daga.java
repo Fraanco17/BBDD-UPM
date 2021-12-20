@@ -20,8 +20,10 @@ public class Daga {
 
     // @TODO completar las anotaciones de todos los atributos
 
-    public Daga(String nombre){
+    public Daga(String nombre, int dmg, float weight){
         this.name=nombre;
+        this.daño = dmg;
+        this.peso = weight;
         // @TODO completar el constructor de la clase.
     }
 

@@ -17,7 +17,7 @@ public class Main {
             //@TODO añada las llamadas a las funciones de la clase Controller.java necesarias
             //para la creación de la daga y el mago.
             if(daga!=null && mago!=null)
-                System.out.println("Se ha creado el mago "+mago.getName()+" de nivel 1 con la daga "+daga.getName());
+                System.out.println("Se ha creado el mago "+mago.getName()+" de nivel 1 con la daga "+daga.getnombre());
             else throw new SQLException();
         } catch(SQLException e) {
             System.err.println("Se ha producido un error en la conexión con la base de datos");

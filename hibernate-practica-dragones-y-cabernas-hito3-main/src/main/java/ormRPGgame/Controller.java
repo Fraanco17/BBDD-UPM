@@ -43,7 +43,7 @@ public class Controller {
      * @return el nuevo usuario creado
      * @throws SQLException
      */
-    public Daga createDaga(String nombre, float daño, float peso) throws SQLException{
+    public Daga createDaga(String nombre, int daño, float peso) throws SQLException{
         // @TODO complete este metodo para crear de forma presistente una daga
 
         Daga daga = new Daga(nombre, daño, peso);
