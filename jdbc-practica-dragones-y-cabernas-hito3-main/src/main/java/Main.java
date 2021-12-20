@@ -7,7 +7,7 @@ import game.model.Hacha;
 public class Main {
     // @TODO: Sustituya xxxx por los parámetros de su conexión
 
-    private static final String DB_SERVER = "127.0.0.1";
+    private static final String DB_SERVER = "localhost";
 
     private static final int DB_PORT = 3306;
 
@@ -15,7 +15,7 @@ public class Main {
 
     private static final String DB_USER = "root";
 
-    private static final String DB_PASS = "123789";
+    private static final String DB_PASS = "123456";
 
     private static Connection conn;
 

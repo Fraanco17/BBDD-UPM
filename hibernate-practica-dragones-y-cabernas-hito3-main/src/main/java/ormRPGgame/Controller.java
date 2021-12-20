@@ -48,9 +48,9 @@ public class Controller {
         return daga;
     }
 
-    public Mago createMago(String magician, Daga daga) throws SQLException {
+    public Mago createMago(String magician, Daga daga, int id) throws SQLException {
         // @TODO complete este metodo para crear de forma presistente un mago
-        Mago mago = new Mago(magician,daga);
+        Mago mago = new Mago(magician,daga,id);
         return mago;
     }
 }

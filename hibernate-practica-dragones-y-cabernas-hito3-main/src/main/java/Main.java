@@ -9,7 +9,7 @@ public class Main {
     public static void main (String [] args) throws SQLException {
         Controller controller = new Controller();
         Daga daga = controller.createDaga("Daga de madera");
-        Mago mago = controller.createMago("Mago Increible", daga);
+        Mago mago = controller.createMago("Mago Increible", daga,8);
         try {
             Controller controlador= new Controller();
             //@TODO añada las llamadas a las funciones de la clase Controller.java necesarias
