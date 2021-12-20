@@ -1,5 +1,6 @@
 package ormRPGgame;
 
+import ormRPGgame.model.Jugador;
 import ormRPGgame.model.Mago;
 import ormRPGgame.model.Daga;
 
@@ -42,15 +43,16 @@ public class Controller {
      * @return el nuevo usuario creado
      * @throws SQLException
      */
-    public Daga createDaga(String nombre) throws SQLException{
+    public Daga createDaga(String nombre, float daño, float peso) throws SQLException{
         // @TODO complete este metodo para crear de forma presistente una daga
-        Daga daga = new Daga(nombre);
+
+        Daga daga = new Daga(nombre, daño, peso);
         return daga;
     }
 
-    public Mago createMago(String magician, Daga daga, int id) throws SQLException {
+    public Mago createMago(String magician, Daga daga, int id, Jugador jugador) throws SQLException {
         // @TODO complete este metodo para crear de forma presistente un mago
-        Mago mago = new Mago(magician,daga,id);
+        Mago mago = new Mago(magician,daga,id,jugador);
         return mago;
     }
 }
