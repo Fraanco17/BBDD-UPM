@@ -26,10 +26,12 @@
 
         <property name="hibernate.hbm2ddl.auto">update</property>
 
-        <mapping resource="Mago.cfg.xml"/>
+        <mapping class="ormRPGgame.model.Mago"/>
 
 
-        <mapping resource="Daga.cfg.xml"/>
+        <mapping class="ormRPGgame.model.Daga"/>
+
+        <mapping class="ormRPGgame.model.Jugador"/>
         <!--Añada tantas clases como entidades tenga en su modelo-->
         <!--Las clases deben crearse en el paquete "model"-->
     </session-factory>

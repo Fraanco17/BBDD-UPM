@@ -1,8 +1,18 @@
 package ormRPGgame.model;
 
+import javax.persistence.*;
+
+@Entity
+@Table(name = "jugador")
 public class Jugador {
+    @Id
+    @Column(name = "ID_jugador", nullable = false)
+    @GeneratedValue
     private int ID_Jugador;
+
+    @Column(name="nombre")
     private String nombre;
+
 
     public Jugador(int ID_Jugador, String nombre) {
         this.ID_Jugador = ID_Jugador;

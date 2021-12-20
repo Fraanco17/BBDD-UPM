@@ -8,14 +8,19 @@ import javax.persistence.*;
 @Table(name = "Mago")
 public class Mago {
     @Id
-    @Column(name="id", nullable = false)
+    @Column(name="ID_M", nullable = false)
     @GeneratedValue
     private int ID_M;
+
     @Column(name="nombre")
     private String name;
-    @OneToMany(mappedBy = "daga")
+
+    @ManyToOne()
+    @JoinColumn(name = "nombre_daga")
     private Daga nombre_daga;
-    @Column(name="idJugador")
+
+    @ManyToOne()
+    @JoinColumn(name="ID_jugador")
     private Jugador ID_jugador;
     // @TODO completar las anotaciones de todos los atributos
 
@@ -27,10 +32,8 @@ public class Mago {
         this.name=nombre;
         this.nombre_daga =daga;
         this.ID_M=id;
-        this.ID_jugador=jugador;
+        this.ID_jugador= jugador;
     }
-
-
 
     public String getName() {
         return name;
