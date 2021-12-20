@@ -2,10 +2,20 @@ package ormRPGgame.model;
 
 // @TODO completar las anotaciones de la clase
 
+import javax.persistence.*;
+
+@Entity
+@Table(name = "Mago")
 public class Mago {
-    private String name;
+    @Id
+    @Column(name="id", nullable = false)
+    @GeneratedValue
     private int ID_M;
+    @Column(name="nombre")
+    private String name;
+    @OneToMany(mappedBy = "daga")
     private Daga nombre_daga;
+    @Column(name="idJugador")
     private Jugador ID_jugador;
     // @TODO completar las anotaciones de todos los atributos
 
